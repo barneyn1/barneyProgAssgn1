@@ -1,0 +1,120 @@
+/*Jordan Proto-Lyte Product Card Stylesheet*/
+
+* {
+	/*Alt box model*/
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+
+	font-family:Arial, Helvetica, sans-serif;
+
+	/*Variables*/
+	--font-color-primary: black;
+	--font-color-secondary: lightgray;
+	--shoe-color-one: black;
+	--shoe-color-two: red;
+	--shoe-color-three: beige;
+}
+
+body {
+	background-color: black;
+	display: flex;
+	align-items: center;
+}
+
+.product-card {
+	align-content: center;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 800px;
+	height: 500px;
+	margin-top: 120px;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: white;
+}
+
+.product-card .left-img-col {
+	margin-top: 3px; /*Fixes a whitespace issue in container*/
+}
+
+.product-card .left-img-col img {
+	width: 400px;
+	height: 500px;
+}
+
+.product-card .right-info-col {
+	padding: 0 20px 20px 20px; /*Removing top padding matches img better*/
+}
+
+.product-card .right-info-col h3 {
+	color: var(--font-color-primary);
+	margin-bottom: 15px;
+	font-size: 32px;
+}
+
+.product-card .right-info-col h5 {
+	color: var(--font-color-secondary);
+	margin-bottom: 20px;
+	font-size: 18px;
+}
+
+.product-card .right-info-col p {
+	color: var(--font-color-primary);
+	padding-left: 50px;
+	margin-bottom: 20px;
+	font-size: 14px;
+}
+
+.product-card .right-info-col .available-colors {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	color: var(--font-color-primary);
+	padding: 20px 50px;
+	margin-bottom: 20px;
+	font-size: 14px;
+}
+
+.product-card .right-info-col .available-colors .black-color-container{
+	width: 20px;
+	height: 20px;
+	border-radius: 50%;
+	background-color: var(--shoe-color-one);
+}
+
+.product-card .right-info-col .available-colors .red-color-container{
+	width: 20px;
+	height: 20px;
+	border-radius: 50%;
+	background-color: var(--shoe-color-two);
+}
+
+.product-card .right-info-col .available-colors .white-color-container{
+	width: 20px;
+	height: 20px;
+	border-radius: 50%;
+	background-color: var(--shoe-color-three);
+}
+
+.product-card .right-info-col .price {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin-bottom: 20px;
+}
+
+.product-card .right-info-col .price h4 {
+	color: var(--font-color-primary);
+	font-size: 32px;
+	font-weight: 800;
+}
+
+.product-card .right-info-col .price .buy-btn {
+	color: white;
+	background-color: black;
+	width: 150px;
+	height: 40px;
+	border-radius: 40px;
+}
